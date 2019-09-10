@@ -2,10 +2,18 @@
 #define ENEMY_H
 
 
-class enemy
+#include <QGraphicsRectItem>
+#include <QObject>
+
+class Enemy:public QObject, public QGraphicsRectItem
 {
+    Q_OBJECT
 public:
-    enemy();
+    Enemy();
+
+public slots:
+    void move();
+
 };
 
 #endif // ENEMY_H

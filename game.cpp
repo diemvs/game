@@ -6,6 +6,7 @@ Game::Game(QWidget *parent) :
     ui(new Ui::Game)
 {
     ui->setupUi(this);
+
 }
 
 Game::~Game()
